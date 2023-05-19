@@ -18,7 +18,7 @@ var storage = multer.diskStorage({
 var uploads = multer({ storage: storage });
 
 //connect to db
-mongoose.connect('mongodb://127.0.0.1:27017/csvdemos', { useNewUrlParser: true })
+mongoose.connect('mongodb://44.226.145.213:27017/csvdemos', { useNewUrlParser: true })
   .then(() => console.log('connected to db'))
   .catch((err) => console.log(err))
 
